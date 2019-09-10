@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: #1b3a57; 
+    margin: 0;
+    background-color: #eef2f8;
+   /* box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);*/
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #F6F7F9;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d4dce7;
+  }
