@@ -1,0 +1,2 @@
+# etude
+Pupils manager app
