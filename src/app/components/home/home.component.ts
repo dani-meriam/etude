@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalComponent} from '../modal/modal.component';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  sortBy() {
+    console.log('click');
+    document.getElementById('myModal').classList.add('modal-show');
+ }
 }
