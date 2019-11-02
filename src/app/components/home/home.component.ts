@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
   sortBy() {
-    console.log('click');
     document.getElementById('myModal').classList.add('modal-show');
+    document.getElementById('myModal').classList.remove('modal-close');
  }
 }

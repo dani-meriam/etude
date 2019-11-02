@@ -1,10 +1,33 @@
 <p>modal works!</p>
 <div id="myModal" class="modal">
-
+        <span class="close"  (click)="closeModal()">&times;</span>
         <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
+        <div class="modal-content" style="display: none">
+            <div class="modal-head">
+                <span>periode</span>
+                <span>regular</span>
+            </div>
           <p>Some text in the Modal..</p>
+        </div>
+
+        <div class="modal-content modal-add">
+            <div class="modal-head">
+                <h1>Ajouter un nouveau eleve</h1>
+                <br>
+            </div>
+          <div>
+            <form>
+              Nom de l´eleve:<br>
+              <input type="text" name="name" class="modal-input"><br><br>
+              Niveau:<br>
+              <input type="text" name="level" class="modal-input"><br><br>
+              Matieres:<br>
+              <input type="text" name="matiere" class="modal-input"><br><br>
+              Debut d´étude:<br>
+              <input type="text" name="lastname" class="modal-input"><br>
+              <input type="submit" class="modal-submit">
+            </form>
+          </div>
         </div>
       
 </div>

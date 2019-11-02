@@ -1,35 +1,42 @@
-.modal {
-    
+.modal {    
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+     /* Location of the box */
     left: 0;
     top: 0;
-    width: 50%; /* Full width */
-    height: 50%; /* Full height */
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     background-color: #00000066; /* Black w/ opacity */
-    transform:translate(50%, -600px);
+   /* transform:translate(50%, -600px);
     opacity: 0;
     transition: all 2s ease-in-out; 
+    border-radius: 5px;*/
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
   }
   
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
     margin: auto;
+    margin-top: 30px;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    height: 80%;
   }
   
   /* The Close Button */
   .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
+    padding-right: 10px;
     font-weight: bold;
   }
   
@@ -40,8 +47,49 @@
     cursor: pointer;
   }
   .modal-show{
-   /*transition: opacity 1s linear;  */
+   /*transition: opacity 1s linear;  
     transform:translate(50%, 50%);
+    opacity: 1;*/
+    visibility: visible;
     opacity: 1;
-    
+  }
+  .modal-close{
+     visibility: hidden;
+     opacity: 0;
+   }
+  .modal-head{
+      span{
+          width: 50%;
+          padding-left: 10px;
+      }
+  }
+  .modal-add{
+    width: 50%;
+    background-image: url(https://previews.123rf.com/images/drawkman/drawkman1807/drawkman180700124/1…eyed-monster-vector-halloween-illustration-big-set-of-cartoon-monsters.jpg);
+    background-position: right bottom;
+    /*background-size: 280%;*/
+    background-repeat: no-repeat;
+    background-size: 418px 501px;
+  }
+  .modal-input{
+    width: 80%;
+    padding: 5px;
+  }
+  .modal-submit{
+    float: right;
+    padding: 10px;
+    width: 30%;
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #1b3a57;
+    background: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border-radius: 20px;
+    border: none;
+    margin-top: 80px;
+    cursor: pointer;
+    &:hover{
+      box-shadow: 0px 2px 5px 2px rgba(81, 83, 167, 0.28);
+  }
   }
